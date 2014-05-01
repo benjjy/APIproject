@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+      
+    </style>
+    <link href="styles.css" rel="stylesheet">
+     
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRdHJ7Uk1FHQah_sHErofwS-KjEAhTn8w&sensor=false">
+    </script>
+    
+    
+    <script type="text/javascript">
+      var map1;
+      function initialize() {
+        
+        var lollapalooza = new google.maps.LatLng(41.8794774, -87.6189409);
+        var myLatlng = new google.maps.LatLng(38.0858447,-95.3134375);
+        var myOptions = {
+          zoom: 7,
+          center: lollapalooza,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        
+        map1 = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+        
+           var marker1 = new google.maps.Marker({
+              position: lollapalooza,
+              map: map1,
+              title: 'Lollapalooza Music Festival',
+          });
+          
+          var contentString1 = '<h4>Lollapalooza Music Festival</h4>'
+
+          var infowindow2 = new google.maps.InfoWindow({
+          content: contentString1,
+          });
+          
+          google.maps.event.addListener(marker1, 'click', function() {
+          infowindow2.open(map1,marker1);
+  });
+      
+          
+          
+          
+          
+          
+      }
+      
+      
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+    
+  </body>
+</html>

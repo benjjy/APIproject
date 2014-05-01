@@ -1,0 +1,32 @@
+
+
+.t{
+    float:left;
+    padding-top:20px;
+    padding-left:20px;
+    padding-right:15px;
+}
+
+#twitterBox p{
+    padding:10px;
+    padding-right:20px;
+    font-family:Znikomit;
+    size:14pt;
+    color:white;
+    
+    
+}
+
+#twitterBox a{
+    
+    color:white;
+}
+
+.time{
+    float:right;
+}
+
+#view p{
+    padding-top:0px;
+    padding-left:25px;
+}
