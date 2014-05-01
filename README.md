@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 twitter-api-php
 ======================
 Simple PHP Wrapper for Twitter API v1.1 calls
@@ -89,3 +90,9 @@ Set the GET field BEFORE calling buildOauth(); and everything else is the same:
                  ->performRequest();
 
 That is it! Really simple, works great with the 1.1 API. Thanks to @lackovic10 and @rivers on SO!
+=======
+APIproject
+==========
+
+Social media mashup using various APIs; final project for JOMC581
+>>>>>>> 748f70e6b96350c398d582b35a7dbc67f78b9103
